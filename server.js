@@ -1,11 +1,26 @@
 const express = require('express');
-const server = express();
 
-server.get('/',(req,res) =>{
-    res.send('Welcome home, this is cohort 12')
-})
-server.get('/index',(req,res) =>{
+const path = require('path');
+
+
+// Importing Route Files
+const formRoutes = require('./routes/formRoutes');
+
+// Instantiations
+const app = express();
+
+
+// Configurations
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname,'views'));
+
+// Routes
+app.use('/', formRoutes);
+
+
+
+app.get('/index',(req,res) =>{
     res.render('index');
 });
 
-server.listen(3000, ()=> console['log']('Listening live on port 3000'));
+app.listen(3000, ()=> console['log']('Listening live on port 3000'));

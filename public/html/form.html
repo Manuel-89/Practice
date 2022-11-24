@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>farmer-one-registration-form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">U Farm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <Section id="productUpload" >
+ <div class="container justify-content-center">
+  <h3 class="text-center">Farmer-One-Registration</h3>
+  <form class="row-g-3 needs validation" no validate> 
+    <div class="row">
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="firstName">
+    </div>
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="lastName">
+    </div>
+    <div>
+    <div class="row">
+      <div class="col-md-4">
+        <label for="uniqueId" class="form-label">Unique Id</label>
+        <input type="text" class="form-control" id="uniqueId">
+      </div>
+      <div class="col-md-4">
+        <label for="NIN" class="form-label">NIN</label>
+        <input type="text" class="form-control" id="NIN">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Ward Name</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>Massaja A.</option>
+        <option>Massaja B.</option>
+        <option>Massaja C.</option>
+        <option>Massaja D.</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+          <label for="gender" class="form-label">Gender</label>
+        <select id="Gender" class="form-select">
+          <option selected>Choose...</option>
+          <option>Male.</option>
+          <option>Female.</option>
+          <option>Other.</option>
+          
+      </select></div>
+      <form class="row">
+        <div class="col-md-4">
+          <label for="productName" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="productName">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Date of birth</label>
+      <input type="date" class="form-control" id="dateOfBirth">
+        </div>
+      </div>
+      <div class="row">
+    <div class="col-md-4">
+      <label for="input" class="form-label">Activities Undertaken</label>
+      <select id="activitiesUndertaken" class="form-select">
+        <option selected>Choose...</option>
+        <option>Weeding</option>
+        <option>Harvesting.</option>
+        <option>Planting.</option>
+        <option>Value Addition.</option>
+        
+      </select>
+    </div>
+
+    
+    <div class="col-md-4">
+      <label for="type" class="form-label">Residence Type</label>
+      <select id="produceType" class="form-select">
+        <option selected>Choose...</option>
+        <option>Permanent</option>
+        <option>Temporary</option>
+        
+      </select>
+    </div>
+    
+    <div class="col-md-4 py-4">
+    <div class="input-group">
+      <label for="inputState" class="form-label">Period of stay</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>Massaja A.</option>
+        <option>Massaja B.</option>
+        <option>Massaja C.</option>
+        <option>Massaja D.</option>
+        
+      </select>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+   <div class="col-md-4">
+        <label for="productUploadDate" class="form-label">Date of Registration</label>
+        <input type="date" class="form-control" id="productUploadDate">
+      </div>
+    <div class="col-md-4 py-4">
+        <label for="text" class="form-label">Directions</label>
+        <input type="text" class="form-control-lg" id="directions" >
+        
+    </div>
+    <div class="col-md-4">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="">
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center py-4">
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+  </div>
+  </form> 
+</div>
+</Section>
+
+  <section id="footer">
+    <div class="container py-5 bg-grey fluid">
+      <div class="row">
+        <div class="col ms-auto text-center">
+          <hr>
+          <p1>Copyright &copy 2022 Cohort-12 U Farm Initiatitive</p1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    
+  </body>
+
+</html>
