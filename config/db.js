@@ -1,4 +1,4 @@
 module.exports = {
-    database: "mongodb://localhost:27017/uFarm-2022",
+    database: "mongodb://localhost:27017/uFarm-Final Assessment",
     secret:"bootCamp@2022",
 };
